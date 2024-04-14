@@ -1,0 +1,52 @@
+schema  = {
+  "doc": "Spotify Wrapped 2024",
+  "name": "SpotifyData",
+  "namespace": "com.spotify.wrapped",
+  "type": "record",
+  "fields": [
+    {
+      "name": "songPlays",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "SongPlay",
+          "fields": [
+            {"name": "songId", "type": "int"},
+            {"name": "songName", "type": "string"},
+            {"name": "originalDuration", "type": "int"},
+            {"name": "releaseDate", "type": "int"},
+            {"name": "popularity", "type": "int"},
+            {"name": "artist", "type": "string"},
+            {"name": "artistID", "type": "int"},
+          ]
+        }
+      }
+    },
+    {
+      "name": "userInteractions",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "UserInteraction",
+          "fields": [
+            {"name": "userId", "type": "string"},
+            {"name": "interactionTimestamp", "type": "string"},
+            {"name": "location", "type": "string"},
+            {
+              "name": "interactionType",
+              "type": {
+                "type": "enum",
+                "name": "InteractionType",
+                "symbols": ["play", "skip", "like", "add_to_playlist", "leave_app", "end_song"]
+              }
+            },
+            {"name": "listeningPersonality", "type": "string"},
+          ]
+        }
+      }
+    },
+  ]
+}
+parsed_schema = parse_schema(schema)
