@@ -54,7 +54,7 @@ variety = pd.read_csv("/content/drive/MyDrive/data/variety.csv")
 user_personality_df = pd.read_csv("/content/drive/data/user_personality_df.csv")
 ```
 
-4. Run the notebook to obtain the analyses described in the following sections.
+4. Run the "spotify_data_analyses.ipynb" notebook to obtain the analyses described in the following sections.
 
 ## Configuration
 
