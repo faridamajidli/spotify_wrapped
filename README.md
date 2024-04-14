@@ -123,15 +123,9 @@ For a real-life implementation with real data, we would add triggers and waterma
 
 ## Credits
 The authors of this project are:
-
-Majidli, Farida
-
-Troje, Delphine
-
-Ploquin, Tomas
-
-Pascual, Fernando
-
-Conesa, Angel
-
-Oliver, Paula
+1. Majidli, Farida
+2. Troje, Delphine
+3. Ploquin, Tomas
+4. Pascual, Fernando
+5. Conesa, Angel
+6. Oliver, Paula
