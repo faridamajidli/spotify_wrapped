@@ -77,3 +77,13 @@ Lastly, we encountered difficulties in creating a user-friendly interface for sp
 Throughout this project, we learned how to use streaming data as well as overcome challenges that streaming data poses. We implemented an architecture to create and process streaming data and learned about the possible analyses of the given data. We were successful in creating analyses that gave meaningful insights and would make business sense. However, we could also reflect on the resource constraints, which were time, computational resources, and the absence of real data, and find methods to overcome them.
 
 For a real-life implementation with real data, we would add triggers and watermarks to handle late data, different customer groups for each analysis, and additional brokers to have replication for each partition and ensure data safety. The triggers will be based on the window size that we created as it would also reflect how often we need this analysis for the departments and for the users. A watermark will drop late values to ensure that values outside of the window are not included in the weekly or daily report.
+
+## Credits
+The authors of this project are:
+
+Majidli, Farida
+Troje, Delphine
+Ploquin, Tomas
+Pascual, Fernando
+Conesa, Angel
+Oliver, Paula
