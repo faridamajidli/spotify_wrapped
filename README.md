@@ -13,6 +13,35 @@ Each user was randomly assigned one of the 16 personalities for the simulation. 
 
 The user data simulation comprised two phases: extracting song-related data from the Spotify dataset and generating synthetic user data using the Faker library. To ensure continuity, we pre-ran the simulation to establish a fixed set of user IDs. We set the simulation period to 48 hours, during which we generated approximately 7000 unique users. This dataset was then processed and ingested by Kafka using pre-defined unique user IDs. The updated code for Milestone 1 is available on this repository.
 
+## Installation
+To run the scripts, you need to install several Python libraries. You can install them using pip:
+
+```bash
+!pip install fastavro kafka-python
+!pip install fastavro
+!pip install arrow
+!pip install faker
+!pip install pycountry-convert
+!pip install azure.storage.queue
+!pip install pyspark
+!pip install azure.eventhub
+!pip install findspark
+```
+## Usage
+
+1. Mount Google Drive to access the datasets:
+
+```bash
+from google.colab import drive
+drive.mount('/content/drive')
+```
+In total, there are 9 .csv files that need to be imported to correctly run the code. 8 of these datasets are related to the 16 listening personalities of the users. The remaining 1 file consists around 7,000 unique user IDs. All of the files are included in the "data" folder in this repository branch. 
+
+2. Load the Datasets from your Google Drive following the directory structure provided in the code.
+The lines in the .ipynb file that need to be changed acoordingly are ...
+
+3. Run the notebook to obtain the analyses described in the following sections.
+
 ## Configuration
 
 The setup for Milestone 2 involves four key steps: creating the Kafka environment, setting up the data producer, configuring the data consumer, and configuring the Kafka and Spark Python environment.
