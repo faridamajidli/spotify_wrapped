@@ -1,9 +1,9 @@
 # Stream Analytics: Spotify Wrapped
 Milestone 1: This phase focused on establishing the foundational framework and initial data handling capabilities for the project. We set up the necessary infrastructure for streaming data analysis, which included configuring data ingestion, storage, and preliminary processing systems. The goal was to ensure that the infrastructure was robust enough to handle real-time data flows efficiently and reliably. 
-* Access through spotify_wrapped/milestone_1
+* Access through spotify_wrapped/faridamajidli-milestone-1
 
 Milestone 2: In the second milestone, we delved into detailed analyses tailored to the specific needs of three main stakeholders of Spotify: internal managers, users, and artists. We developed personalized statistics and predictive models to enhance their experiences and operational efficiency on the Spotify platform. This phase not only refined our analytical models but also provided valuable insights into improving user engagement and decision-making processes within Spotify.
-* Access through spotify_wrapped/milestone_2
+* Access through spotify_wrapped/faridamajidli-milestone-2
 
 ## Reflection and Discussion Summary
 Throughout the project, our team gained significant experience in utilizing streaming data and navigating the challenges associated with it. We developed a robust architecture for generating and processing streaming data, learning to conduct analyses that yield actionable insights with practical business implications. Although successful in our analytical endeavors, we critically reflected on the constraints we faced, such as limited time, computational resources, and the lack of real data. These reflections allowed us to identify and implement strategies to effectively manage these limitations.
