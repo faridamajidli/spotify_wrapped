@@ -58,7 +58,10 @@ On the consumer front, our analysis tailors Spotify's user experience by persona
 For artists, our approach provides real-time data on how their music performs across different regions, informing their promotional strategies and content release plans. With tools like PowerBI, artists gain access to detailed performance metrics, allowing them to make informed decisions that enhance their careers and revenue potential. These analytics support Spotify's broader strategy of building a robust ecosystem that benefits both users and artists, driving the company's overall growth and market dominance.
 
 ## Challenges
-Throughout our project, we faced three main challenges: simulating realistic user behavior, balancing realism with performance, and adopting a test-and-learn approach under technical constraints.
+Throughout our project, we faced three main challenges: 
+1. Simulating realistic user behavior
+2. Balancing realism with performance
+3. Adopting a test-and-learn approach under technical constraints
 
 Our first challenge involved creating a realistic simulation of user behavior, which proved difficult due to the complexity of maintaining consistent user attributes like location, personality, and subscription type over time. In real-world applications, user demographics and subscription statuses often shift as the platform gains or loses popularity. Our simulation struggled to accurately model these dynamics, including setting a realistic monthly user growth rate. Additionally, our data did not include event timestamps aligned with regional time zones, a feature typical in live environments. To improve future simulations, we plan to integrate reference data from Azure Blob Storage for more dynamic user ID generation and regional time settings.
 
