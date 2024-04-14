@@ -38,9 +38,23 @@ drive.mount('/content/drive')
 In total, there are 9 .csv files that need to be imported to correctly run the code. 8 of these datasets are related to the 16 listening personalities of the users. The remaining 1 file consists around 7,000 unique user IDs. All of the files are included in the "data" folder in this repository branch. 
 
 2. Load the Datasets from your Google Drive following the directory structure provided in the code.
-The lines in the .ipynb file that need to be changed acoordingly are ...
+The lines in the .ipynb file that need to be changed accordingly are:
+```bash
+commonality = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/commonality.csv")
+exploration = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/exploration.csv")
+familiarity = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/familiarity.csv")
+loyalty = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/loyalty.csv")
+newness = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/newness.csv")
+timelessness = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/timelessness.csv")
+uniqueness = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/uniqueness.csv")
+variety = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/variety.csv")
+```
 
-3. Run the notebook to obtain the analyses described in the following sections.
+```bash
+
+```
+
+4. Run the notebook to obtain the analyses described in the following sections.
 
 ## Configuration
 
