@@ -38,7 +38,7 @@ Once these datasets were created, each user was randomly assigned to adopt one o
 The data simulation for the users consisted of two parts. The first part was to access the song-related columns from the Spotify dataset. The second part was to generate fake data for user-related columns using Faker(). 
 
 
-To be able to observe the same users across time, we prerun the simulation to get a fix set of users id.  We set the simulation time to 72 hours and generated in total around 20,000 unique users. Later this generated dataset was fed to Kafka for pre-set unique userIDs. The complete updated code for Milestone 1 is to be found on the GitHub. Due to constraint with the computational power, we reduced manually the dataset to include only 700 users. 
+To be able to observe the same users across time, we prerun the simulation to get a fix set of users id.  We set the simulation time to 48 hours and generated in total around 7,000 unique users. Later this generated dataset was fed to Kafka for pre-set unique userIDs. The complete updated code for Milestone 1 is to be found on the GitHub. 
 
 In this step, an Avro schema for the Spotify Wrapped data is defined with various fields such as userId, songId, genre, etc., including enumerations for interactionType and subscriptionType. The above-mentioned CSV files containing the song personality dataset and user ID information are loaded into Pandas DataFrames. 
 
