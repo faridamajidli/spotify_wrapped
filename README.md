@@ -11,7 +11,7 @@ Based on these characteristics, we segmented our dataset into eight subsets, eac
 
 Each user was randomly assigned one of the 16 personalities for the simulation. In the first milestone, our AVRO schema featured two array fields for user interactions and song plays. For the second milestone, we streamlined the data structure by eliminating these array fields.
 
-The user data simulation comprised two phases: extracting song-related data from the Spotify dataset and generating synthetic user data using the Faker library. To ensure continuity, we pre-ran the simulation to establish a fixed set of user IDs. We set the simulation period to 72 hours, during which we generated approximately 20,000 unique users. This dataset was then processed and ingested by Kafka using pre-defined unique user IDs. The updated code for Milestone 1 is available on this repository.
+The user data simulation comprised two phases: extracting song-related data from the Spotify dataset and generating synthetic user data using the Faker library. To ensure continuity, we pre-ran the simulation to establish a fixed set of user IDs. We set the simulation period to 72 hours, during which we generated approximately 700 unique users. This dataset was then processed and ingested by Kafka using pre-defined unique user IDs. The updated code for Milestone 1 is available on this repository.
 
 ## Configuration
 
@@ -19,7 +19,7 @@ The setup for Milestone 2 involves four key steps: creating the Kafka environmen
 
 Step 1. Create the Kafka Environment
 
-First, we establish a Kafka environment, comprising a Kafka broker and the topic "SpotifyWrapped". We configure the topic with seven partitions to align with the seven continents, merging Oceania and Antarctica due to lower population density. This partitioning strategy ensures data distribution uniformity, enhancing scalability. Given our single broker setup, we limited the number of partitions.
+First, we establish a Kafka environment, comprising a Kafka broker and the topic "SpotifyWrapped". We configure the topic with six partitions to align with the seven continents, merging Oceania and Antarctica due to lower population density. This partitioning strategy ensures data distribution uniformity, enhancing scalability. Given our single broker setup, we limited the number of partitions.
 
 Step 2. Create the Data Producer
 
