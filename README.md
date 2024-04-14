@@ -40,18 +40,18 @@ In total, there are 9 .csv files that need to be imported to correctly run the c
 2. Load the Datasets from your Google Drive following the directory structure provided in the code.
 The lines in the .ipynb file that need to be changed accordingly are:
 ```bash
-commonality = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/commonality.csv")
-exploration = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/exploration.csv")
-familiarity = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/familiarity.csv")
-loyalty = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/loyalty.csv")
-newness = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/newness.csv")
-timelessness = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/timelessness.csv")
-uniqueness = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/uniqueness.csv")
-variety = pd.read_csv("/content/drive/MyDrive/Stream Spotify Project/Milestone 1/new personality datasets/variety.csv")
+commonality = pd.read_csv("/content/drive/MyDrive/data/commonality.csv")
+exploration = pd.read_csv("/content/drive/MyDrive/data/exploration.csv")
+familiarity = pd.read_csv("/content/drive/MyDrive/data/familiarity.csv")
+loyalty = pd.read_csv("/content/drive/MyDrive/data/loyalty.csv")
+newness = pd.read_csv("/content/drive/MyDrive/data/newness.csv")
+timelessness = pd.read_csv("/content/drive/MyDrive/data/timelessness.csv")
+uniqueness = pd.read_csv("/content/drive/MyDrive/data/uniqueness.csv")
+variety = pd.read_csv("/content/drive/MyDrive/data/variety.csv")
 ```
 
 ```bash
-
+user_personality_df = pd.read_csv("/content/drive/data/user_personality_df.csv")
 ```
 
 4. Run the notebook to obtain the analyses described in the following sections.
